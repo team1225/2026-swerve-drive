@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.RunCommand;
 
-//import edu.wpi.first.wpilibj.smartdashboard.Field2d;
+import edu.wpi.first.wpilibj.smartdashboard.Field2d;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -108,7 +108,7 @@ public class RobotContainer {
 
 	// misc
 
-	//private final Field2d field = new Field2d(); //  a representation of the field
+	private final Field2d field = new Field2d(); //  a representation of the field
 	//private final Indicator indicator = new Indicator(apriltag_camera, object_detection_camera);
 
 	// The driver's and copilot's joystick(s) and controller(s)
@@ -310,13 +310,11 @@ public class RobotContainer {
 
 		return config;
 	}
-
-	/*
+	
 	public Field2d getField()
 	{
 		return field;
 	}
-	*/
 
 	public HMAccelerometer getAccelerometer()
 	{

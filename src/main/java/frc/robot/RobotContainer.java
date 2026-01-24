@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.RunCommand;
 
-import edu.wpi.first.wpilibj.smartdashboard.Field2d;
+//import edu.wpi.first.wpilibj.smartdashboard.Field2d;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -28,16 +28,15 @@ import frc.robot.subsystems.TelescopingArm;
 import frc.robot.subsystems.AlgaeBlaster;
 import frc.robot.subsystems.Coralator;
 import frc.robot.subsystems.Climber;
-import frc.robot.subsystems.Indicator;
+//import frc.robot.subsystems.Indicator;
 import frc.robot.commands.algae_blaster.BlastAlgae;
 import frc.robot.commands.algae_blaster.IntakeAlgae;
 import frc.robot.commands.coralator.Eject;
-import frc.robot.commands.coralator.Intake;
 import frc.robot.commands.climber.Out;
 import frc.robot.commands.climber.Climb;
 import frc.robot.commands.drivetrain.*;
-import frc.robot.interfaces.ICamera;
-import frc.robot.commands.indicator.*;
+//import frc.robot.interfaces.ICamera;
+//import frc.robot.commands.indicator.*;
 import frc.robot.commands.pivot_arm.ManuallyAdjustPivotArm;
 import frc.robot.commands.telescoping_arm.ManuallyAdjustTelescopingArm;
 import frc.robot.subsystems.PivotArm;
@@ -78,7 +77,7 @@ public class RobotContainer {
 	public static final String AUTON_TEST_TRAJECTORY_GENERATION = "Test Trajectory Generation";
 	public static final String AUTON_SIMPLE_DRIVE = "Simple Drive";
 	public static final String AUTON_DRIVE_PLUS = "Drive plus";
-	private String autonSelected;
+	//private String autonSelected;
 	private SendableChooser<String> autonChooser = new SendableChooser<>();
 
 	public static final String AUTON_OPTION_JUST_SHOOT_NOTE = "Just Shoot Note";
@@ -93,9 +92,9 @@ public class RobotContainer {
 
 	private final HMAccelerometer accelerometer = new HMAccelerometer();
 
-	private final ICamera object_detection_camera = new ObjectDetectionCamera();
+	//private final ICamera object_detection_camera = new ObjectDetectionCamera();
 
-	private final ICamera apriltag_camera = new AprilTagCamera();
+	//private final ICamera apriltag_camera = new AprilTagCamera();
 
 	// motorized devices
 
@@ -109,8 +108,8 @@ public class RobotContainer {
 
 	// misc
 
-	private final Field2d field = new Field2d(); //  a representation of the field
-	private final Indicator indicator = new Indicator(apriltag_camera, object_detection_camera);
+	//private final Field2d field = new Field2d(); //  a representation of the field
+	//private final Indicator indicator = new Indicator(apriltag_camera, object_detection_camera);
 
 	// The driver's and copilot's joystick(s) and controller(s)
 
@@ -143,12 +142,12 @@ public class RobotContainer {
 					true, true),
 				drivetrain));
 
-		indicator.setDefaultCommand(new IndicatorIndicateUsingCamera(indicator)); // default command, only runs when robot is enabled
+		//indicator.setDefaultCommand(new IndicatorIndicateUsingCamera(indicator)); // default command, only runs when robot is enabled
 
 		telescopingArm.setDefaultCommand(new ManuallyAdjustTelescopingArm(telescopingArm, coDriverController));
 		// pivotArm.setDefaultCommand(new ManuallyAdjustPivotArm(pivotArm, coDriverController));
-		indicatorTimedScrollRainbow = new IndicatorTimedScrollRainbow(indicator,1);
-		indicatorTimedScrollRainbow.schedule(); // we schedule the command as we are starting up
+		//indicatorTimedScrollRainbow = new IndicatorTimedScrollRainbow(indicator,1);
+		//indicatorTimedScrollRainbow.schedule(); // we schedule the command as we are starting up
 	}
 
 	/**
@@ -312,25 +311,31 @@ public class RobotContainer {
 		return config;
 	}
 
+	/*
 	public Field2d getField()
 	{
 		return field;
 	}
+	*/
 
 	public HMAccelerometer getAccelerometer()
 	{
 		return accelerometer;
 	}
 
+	/*
 	public ICamera getObjectDetectionCamera()
 	{
 		return object_detection_camera;
 	}
+	*/
 
+	/*
 	public ICamera getAprilTagCamera()
 	{
 		return apriltag_camera;
 	}
+	*/
 
 	public SwerveDrivetrain getDrivetrain()
 	{

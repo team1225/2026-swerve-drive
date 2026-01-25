@@ -24,23 +24,23 @@ import frc.robot.Constants.DrivetrainConstants;
 import frc.robot.sensors.*;
 
 import frc.robot.subsystems.SwerveDrivetrain;
-import frc.robot.subsystems.TelescopingArm;
-import frc.robot.subsystems.AlgaeBlaster;
-import frc.robot.subsystems.Coralator;
-import frc.robot.subsystems.Climber;
+//import frc.robot.subsystems.TelescopingArm;
+//import frc.robot.subsystems.AlgaeBlaster;
+//import frc.robot.subsystems.Coralator;
+//import frc.robot.subsystems.Climber;
 //import frc.robot.subsystems.Indicator;
-import frc.robot.commands.algae_blaster.BlastAlgae;
-import frc.robot.commands.algae_blaster.IntakeAlgae;
-import frc.robot.commands.coralator.Eject;
-import frc.robot.commands.climber.Out;
-import frc.robot.commands.climber.Climb;
+//import frc.robot.commands.algae_blaster.BlastAlgae;
+//import frc.robot.commands.algae_blaster.IntakeAlgae;
+//import frc.robot.commands.coralator.Eject;
+//import frc.robot.commands.climber.Out;
+//import frc.robot.commands.climber.Climb;
 import frc.robot.commands.drivetrain.*;
 //import frc.robot.interfaces.ICamera;
 //import frc.robot.commands.indicator.*;
-import frc.robot.commands.pivot_arm.ManuallyAdjustPivotArm;
-import frc.robot.commands.telescoping_arm.ManuallyAdjustTelescopingArm;
-import frc.robot.subsystems.PivotArm;
-// import frc.robot.commands.groups.*;
+//import frc.robot.commands.pivot_arm.ManuallyAdjustPivotArm;
+//import frc.robot.commands.telescoping_arm.ManuallyAdjustTelescopingArm;
+//import frc.robot.subsystems.PivotArm;
+//import frc.robot.commands.groups.*;
 
 
 /*
@@ -99,12 +99,13 @@ public class RobotContainer {
 	// motorized devices
 
 	private final SwerveDrivetrain drivetrain = new SwerveDrivetrain();
+	/*
 	private final AlgaeBlaster algaeBlaster = new AlgaeBlaster();
 	private final TelescopingArm telescopingArm = new TelescopingArm();
 	private final PivotArm pivotArm = new PivotArm();
 	private final Coralator coralator = new Coralator();
 	private final Climber climber = new Climber();
-
+	*/
 
 	// misc
 
@@ -144,7 +145,7 @@ public class RobotContainer {
 
 		//indicator.setDefaultCommand(new IndicatorIndicateUsingCamera(indicator)); // default command, only runs when robot is enabled
 
-		telescopingArm.setDefaultCommand(new ManuallyAdjustTelescopingArm(telescopingArm, coDriverController));
+		// telescopingArm.setDefaultCommand(new ManuallyAdjustTelescopingArm(telescopingArm, coDriverController));
 		// pivotArm.setDefaultCommand(new ManuallyAdjustPivotArm(pivotArm, coDriverController));
 		//indicatorTimedScrollRainbow = new IndicatorTimedScrollRainbow(indicator,1);
 		//indicatorTimedScrollRainbow.schedule(); // we schedule the command as we are starting up
@@ -165,6 +166,7 @@ public class RobotContainer {
 		driverController.a()
 			.whileTrue(new DrivetrainSetXFormation(drivetrain));
 
+		/*
 		driverController.b()
 			.onTrue(pivotArm.setGoalDegreesCommand(Rotation2d.fromRadians(.3766).getDegrees()));
 		
@@ -173,7 +175,8 @@ public class RobotContainer {
 
 		driverController.y()
 			.whileTrue(new Climb(climber));
-
+		*/
+		
 		//driverController.x()
 		//	.onTrue(new BlastAlgae(algaeBlaster, telescopingArm));
 
@@ -192,15 +195,19 @@ public class RobotContainer {
 		//	.whileTrue(new ManuallyAdjustTelescopingArm(telescopingArm, coDriverController));
 
 		// speed factor (smaller is faster)
+		
+		/*
 		coDriverController.leftStick()
 			.whileTrue(new ManuallyAdjustPivotArm(pivotArm, coDriverController));
 
 		coDriverController.a()
 			.onTrue(pivotArm.setGoalDegreesCommand(Rotation2d.fromRadians(.4).getDegrees()));
+		*/
 
 		// coDriverController.b()
 		// 	.whileTrue(new Intake(coralator));
 
+		/*
 		coDriverController.b()
 		.onTrue(pivotArm.setGoalDegreesCommand(Rotation2d.fromRadians(1).getDegrees()));
 
@@ -216,8 +223,11 @@ public class RobotContainer {
 
 		coDriverController.povUp().onTrue(pivotArm.setSpeedFactorCommand(50));
 		coDriverController.povDown().onTrue(pivotArm.setSpeedFactorCommand(150));
-	
+		*/
+
 		// Characterization commands on third joystick POV
+		
+		/*
 		characterizationController.povUp()
 			.whileTrue(pivotArm.quasistaticForward());
 
@@ -229,6 +239,7 @@ public class RobotContainer {
 
 		characterizationController.povLeft()
 			.whileTrue(pivotArm.dynamicBackward());
+		*/
 	}
 
 	/**

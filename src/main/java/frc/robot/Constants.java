@@ -6,7 +6,7 @@ package frc.robot;
 
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 
-import edu.wpi.first.math.geometry.Rotation2d;
+//import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.math.trajectory.TrapezoidProfile;
@@ -29,6 +29,7 @@ public final class Constants {
 	public static class AprilTags {
 
 		// facing the field elements (or from the driver station for the stages)
+		/*
 		public static final int RIGHT_BLUE_SOURCE = 1; 
 		public static final int LEFT_BLUE_SOURCE = 2;
 		public static final int RIGHT_RED_SPEAKER = 3;
@@ -45,7 +46,8 @@ public final class Constants {
 		public static final int CENTER_STAGE_BLUE_TRAP = 14;
 		public static final int STAGE_LEFT_BLUE_TRAP = 15;
 		public static final int STAGE_RIGHT_BLUE_TRAP = 16;
-	
+		*/
+
 		public AprilTags() {
 		}
 	}
@@ -153,6 +155,7 @@ public final class Constants {
 		public static final double FREE_SPEED_RPM = 5676;
 	}
 
+	/*
 	public static final class PivotArmConstants {
 		public static final IdleMode TURNING_MOTOR_IDLE_MODE = IdleMode.kBrake;
 		public static final int TURNING_MOTOR_CURRENT_LIMIT_AMPS = 80; // amps
@@ -192,7 +195,9 @@ public final class Constants {
 		public static final double SOFT_LIMIT_FORWARD = Rotation2d.fromRadians(2.1).getRadians();
 		public static final double SOFT_LIMIT_REVERSE = 0.028;
 	}
+	*/
 
+	/*
 	public static final class TelescopingArmConstants {
 		public static final IdleMode IDLE_MODE = IdleMode.kBrake;
 		public static final int CURRENT_LIMIT_AMPS = 20; // amps
@@ -238,4 +243,5 @@ public final class Constants {
 		public static final int CURRENT_LIMIT_AMPS = 60;
 		public static final IdleMode MOTOR_IDLE_MODE = IdleMode.kBrake;
 	}
+	*/
 }

@@ -5,6 +5,7 @@ package frc.robot;
  */
 public class Ports {
 
+		// TO DO: Check on these addresses
 		// IP (v4) addresses
 		// The purpose of this section is to serve as a reminder of what static IP (v4) addresses are used so they are consistent
 		// between the competition and practice robots.

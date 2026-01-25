@@ -41,7 +41,7 @@ public class Robot extends TimedRobot {
 		// autonomous chooser on the dashboard.
 		m_robotContainer = new RobotContainer();
 
-		//SmartDashboard.putData("Swerve Odometry", m_robotContainer.getField());		
+		SmartDashboard.putData("Swerve Odometry", m_robotContainer.getField());		
 	}
 
 	/**
@@ -141,15 +141,15 @@ public class Robot extends TimedRobot {
 		SmartDashboard.putNumber("FrontRightTurningDesiredState", m_robotContainer.getDrivetrain().getFrontRightModule().getDesiredState().angle.getRadians());
 		SmartDashboard.putNumber("RearRightTurningDesiredState", m_robotContainer.getDrivetrain().getRearRightModule().getDesiredState().angle.getRadians());
 
-		/* Display 6-axis Processed Angle Data                                      
-		SmartDashboard.putBoolean(  "IMU_Connected",        m_robotContainer.getDrivetrain().getImu().isConnected());
+		//Display 6-axis Processed Angle Data                                      
+		// SmartDashboard.putBoolean(  "IMU_Connected",        m_robotContainer.getDrivetrain().getImu().isConnected());
 		// SmartDashboard.putBoolean(  "IMU_IsCalibrating",    m_robotContainer.getDrivetrain().getImu().());
 		SmartDashboard.putNumber(   "IMU_Yaw",              m_robotContainer.getDrivetrain().getImu().getYaw().getValueAsDouble());
 		SmartDashboard.putNumber(   "IMU_Pitch",            m_robotContainer.getDrivetrain().getImu().getPitch().getValueAsDouble());
 		SmartDashboard.putNumber(   "IMU_Roll",             m_robotContainer.getDrivetrain().getImu().getRoll().getValueAsDouble());
-		*/
+		
 
-		//m_robotContainer.getField().setRobotPose(m_robotContainer.getDrivetrain().getPose());
+		m_robotContainer.getField().setRobotPose(m_robotContainer.getDrivetrain().getPose());
 		SmartDashboard.putNumber(   "Heading",             m_robotContainer.getDrivetrain().getHeading());
 
 		/*

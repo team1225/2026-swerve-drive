@@ -1,6 +1,6 @@
-# FRC 2025 ReefScape Robot
+# FRC 2026 Sweve Base Test Robot
 
-This repository contains the code for our 2025 FRC competition robot, designed for the FIRST ReefScape challenge.
+This repository contains the code for our 2026 FRC test robot, designed for the FIRST Robotics Competition.
 
 ## Hardware Specifications
 
@@ -20,9 +20,9 @@ To set the zeros of the drivetrain align the wheels so the bolt head faces the p
 ### Development Environment
 - Written in Java
 - Built with Gradle
-- WPILib 2025 (required)
+- WPILib 2026 (required)
 - REV Hardware Client (for NEO motor configuration)
-- Phoenix Tuner X (for Pigeon 2.0 configuration)
+- Phoenix Tuner X (for Pigeon 2.0 configuration) 
 
 ### Project Structure
 ```
@@ -30,14 +30,13 @@ src/main/java/frc/robot/
 ├── commands/        # Command classes for robot actions
 ├── subsystems/      # Subsystem classes for major robot components
 ├── constants/       # Configuration constants and ports
-└── Robot.java      # Main robot class
+└── Robot.java       # Main robot class
 ```
 
 ### Key Features
 - Field-oriented swerve drive control
 - Autonomous Commands:
-  - Simple Drive: Drives forward at 40% power for 3 seconds
-  - Do Nothing: Robot remains stationary
+  - None currently
 - [Add other major features]
 - [Add autonomous routines if developed]
 
@@ -46,25 +45,11 @@ src/main/java/frc/robot/
 #### Driver Controls (Xbox Controller)
 - Left Stick: Drive robot (Y axis for forward/backward, X axis for strafing)
 - Right Stick: Rotate robot (X axis)
-- A Button: Set pivot arm to 0 degrees
-- B Button: Set pivot arm to 30 degrees
-
-#### Co-Driver Controls (Xbox Controller)
-- Right Stick: Manually adjust telescoping arm
-- Left Stick: Manually adjust pivot arm
-- A Button: Set telescoping arm to position 0
-- B Button: Set telescoping arm to position 30
-
-#### Characterization Controls (Xbox Controller)
-- D-Pad Up: Pivot arm quasistatic forward
-- D-Pad Down: Pivot arm quasistatic backward  
-- D-Pad Right: Pivot arm dynamic forward
-- D-Pad Left: Pivot arm dynamic backward
 
 ## Getting Started
 
 ### Prerequisites
-1. Install WPILib 2025
+1. Install WPILib 2026
 2. Install REV Hardware Client
 3. Install Phoenix Tuner X
 4. [Any other required software]

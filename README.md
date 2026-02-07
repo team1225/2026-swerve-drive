@@ -57,7 +57,7 @@ src/main/java/frc/robot/
 ### Installation
 1. Clone the repository:
 ```bash
-git clone [repository URL]
+git clone https://github.com/team1225/2026-swerve-drive.git
 ```
 
 2. Open the project in WPILib VS Code
@@ -79,7 +79,7 @@ git clone [repository URL]
 6. Merge after approval
 
 ## Contributing
-[Add contribution guidelines]
+To contribute to this project, come join us at Team 1225.
 
 ## Team
 Team 1225 - The Gorillas

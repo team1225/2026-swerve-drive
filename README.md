@@ -12,6 +12,12 @@ This repository contains the code for our 2026 FRC test robot, designed for the 
 
 To set the zeros of the drivetrain align the wheels so the bolt head faces the port side (left if standing behind the robot).  Use the Rev Hardware Client to set the zero on of the absolute encoders remembering to persist parameters.
 
+### Intake
+- 4 belts
+- NEO brushless motor with 3:1 gearbox
+- 7 inches from ground to the center of intake wheals
+- 3 inch complient wheals 3 times
+
 ### Sensors
 - CTRE Pigeon 2.0 IMU for robot orientation and field-relative driving
 
@@ -45,6 +51,8 @@ src/main/java/frc/robot/
 #### Driver Controls (Xbox Controller)
 - Left Stick: Drive robot (Y axis for forward/backward, X axis for strafing)
 - Right Stick: Rotate robot (X axis)
+- A button: Wheals turn to X shape (useful for not getting pushed)
+- B button: Intake operation (will be moved)
 
 ## Getting Started
 

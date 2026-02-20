@@ -60,17 +60,7 @@ public class Ports {
 			public static final int FRONT_RIGHT_TURNING = 7;
 			public static final int REAR_RIGHT_TURNING = 9;
 
-			/*
-			public static final int PIVOT_ARM = 12;
-			public static final int TELESCOPING_ARM = 13;
-
-			public static final int CORALATOR = 14;
-
-			public static final int CLIMBER = 17;
-
-			public static final int ALGAE_BLASTER_LEADER = 15;
-			public static final int ALGAE_BLASTER_FOLLOWER = 16;
-			*/
+			public static final int INTAKE = 14;
 		}
 		
 		/**

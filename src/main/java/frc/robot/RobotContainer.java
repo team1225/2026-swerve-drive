@@ -22,7 +22,7 @@ import frc.robot.Constants.AutoConstants;
 import frc.robot.Constants.DrivetrainConstants;
 
 import frc.robot.sensors.*;
-
+import frc.robot.subsystems.Intake;
 import frc.robot.subsystems.SwerveDrivetrain;
 //import frc.robot.subsystems.TelescopingArm;
 //import frc.robot.subsystems.AlgaeBlaster;
@@ -35,6 +35,7 @@ import frc.robot.subsystems.SwerveDrivetrain;
 //import frc.robot.commands.climber.Out;
 //import frc.robot.commands.climber.Climb;
 import frc.robot.commands.drivetrain.*;
+import frc.robot.commands.intake.*;
 //import frc.robot.interfaces.ICamera;
 //import frc.robot.commands.indicator.*;
 //import frc.robot.commands.pivot_arm.ManuallyAdjustPivotArm;
@@ -99,6 +100,7 @@ public class RobotContainer {
 	// motorized devices
 
 	private final SwerveDrivetrain drivetrain = new SwerveDrivetrain();
+	private final Intake intake = new Intake();
 	/*
 	private final AlgaeBlaster algaeBlaster = new AlgaeBlaster();
 	private final TelescopingArm telescopingArm = new TelescopingArm();
@@ -166,10 +168,9 @@ public class RobotContainer {
 		driverController.a()
 			.whileTrue(new DrivetrainSetXFormation(drivetrain));
 
-		/*
 		driverController.b()
-			.onTrue(pivotArm.setGoalDegreesCommand(Rotation2d.fromRadians(.3766).getDegrees()));
-		
+			.whileTrue(new IntakeRun(intake));
+		/*	
 		driverController.x()
 			.whileTrue(new Out(climber));
 

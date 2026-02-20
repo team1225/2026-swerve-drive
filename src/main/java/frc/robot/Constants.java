@@ -155,6 +155,12 @@ public final class Constants {
 		public static final double FREE_SPEED_RPM = 5676;
 	}
 
+	public static final class IntakeConstants {
+		public static final double INTAKE_SPEED = 0.75;
+		public static final int CURRENT_LIMIT_AMPS = 30;
+		public static final IdleMode MOTOR_IDLE_MODE = IdleMode.kBrake;
+	}
+
 	/*
 	public static final class PivotArmConstants {
 		public static final IdleMode TURNING_MOTOR_IDLE_MODE = IdleMode.kBrake;
@@ -220,12 +226,6 @@ public final class Constants {
 		public static final double SOFT_LIMIT_REVERSE = 0.0;  // Minimum retracted position
 	}
 
-	public static final class CoralatorConstants {
-		public static final double INTAKE_SPEED = 0.15;
-		public static final double EJECT_SPEED = -0.15;
-		public static final int CURRENT_LIMIT_AMPS = 60;
-		public static final IdleMode MOTOR_IDLE_MODE = IdleMode.kBrake;
-	}
 
 	public static final class ClimberConstants {
 		public static final double CLIMB_SPEED = 0.25;

@@ -15,8 +15,7 @@ To set the zeros of the drivetrain align the wheels so the bolt head faces the p
 ### Intake
 - 4 belts
 - NEO brushless motor with 3:1 gearbox
-- 7 inches from ground to the center of intake wheals
-- 3 inch complient wheals 3 times
+- 3 inch compliant wheels 3 times
 
 ### Sensors
 - CTRE Pigeon 2.0 IMU for robot orientation and field-relative driving

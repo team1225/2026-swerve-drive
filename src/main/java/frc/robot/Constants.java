@@ -155,13 +155,13 @@ public final class Constants {
 		public static final double FREE_SPEED_RPM = 5676;
 	}
 
+	/*
 	public static final class IntakeConstants {
 		public static final double INTAKE_SPEED = 0.75;
 		public static final int CURRENT_LIMIT_AMPS = 30;
 		public static final IdleMode MOTOR_IDLE_MODE = IdleMode.kBrake;
 	}
-
-	/*
+	
 	public static final class PivotArmConstants {
 		public static final IdleMode TURNING_MOTOR_IDLE_MODE = IdleMode.kBrake;
 		public static final int TURNING_MOTOR_CURRENT_LIMIT_AMPS = 80; // amps

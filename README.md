@@ -52,7 +52,6 @@ src/main/java/frc/robot/
 - Left Stick: Drive robot (Y axis for forward/backward, X axis for strafing)
 - Right Stick: Rotate robot (X axis)
 - A button: Wheals turn to X shape (useful for not getting pushed)
-- B button: Intake operation (will be moved)
 
 ## Getting Started
 
